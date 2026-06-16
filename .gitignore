@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+output/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 本地用 pyinstaller 试打包时产生的中间文件（CI 里跑的是同样的命令，
+# 不依赖这些本地产物，不需要提交）
+build/
+dist/
+*.spec
+
+# 本地编辑后的配置（包含具体单位/标题文字），不应提交进仓库
+config.txt
